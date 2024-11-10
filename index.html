@@ -8,35 +8,114 @@
     <link rel='stylesheet' href='movil.css'>
     <script src='https://code.jquery.com/jquery-3.7.1.js' crossorigin='anonymous'></script>
 </head>
-<body class="ancho">
-    <h1>Lastest Projects</h1>
-    <nav>
-        <ul><a href="#all">ALL ITEMS</a></ul>
-        <ul><a href="#mobile">MOBILE APP</a></ul>
-        <ul><a href="#web">WEB APP</a></ul>
-        <ul><a href="#custom">CUSTOM SOFT</a></ul>
-        <ul><a href="#ui">UI/UX</a></ul>
-    </nav>
-    <section id="all" class="contenidoall">
-        <div class="contenedorDoble">
-            <figure class="figura1">
-                <img src="imagenes/port7.jpg" alt="Texto descriptivo">
-            </figure>
-            <figure class="figura2">
-                <img src="imagenes/port2.png" alt="Texto descriptivo">
-            </figure>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="ancho">
+            <p class="tituloAzul">OUR WORKS</p>
+            <h1>Lastest Projects</h1>
+            <nav>
+                <ul>
+                    <li><a href="#all">ALL ITEMS</a></li>
+                    <li><a href="#mobile">MOBILE APP</a></li>
+                    <li><a href="#web">WEB APP</a></li>
+                    <li><a href="#custom">CUSTOM SOFT</a></li>
+                    <li><a href="#ui">UI/UX</a></li>
+                </ul>
+            </nav>
+            <br>
+            <div class="tab_content">
+                <section id="all" class="contenidoall">
+                    <div class="contenedorDoble">
+                        <figure class="figura1">
+                            <img src="imagenes/port7.jpg" alt="Texto descriptivo">
+                        </figure>
+                        <figure class="figura2">
+                            <img src="imagenes/port2.png" alt="Texto descriptivo">
+                        </figure>
+                    </div>
+                    <div class="contenedorTriple">
+                        <figure  class="figura1">
+                            <img src="imagenes/port7.jpg" alt="Texto descriptivo">
+                        </figure>
+                        <figure  class="figura2">
+                            <img src="imagenes/port6.jpg" alt="Texto descriptivo">
+                        </figure>
+                        <figure  class="figura3">
+                            <img src="imagenes/port3.jpg" alt="Texto descriptivo">
+                        </figure>
+                    </div>
+                </section>
+                <section id="mobile" class="contenidoall">
+                    <div class="contenedorDoble">
+                        <figure class="figura1">
+                            <img src="imagenes/port7.jpg" alt="Texto descriptivo">
+                        </figure>
+                        <figure  class="figura1">
+                            <img src="imagenes/port6.jpg" alt="Texto descriptivo">
+                        </figure>
+                    </div>
+                </section>
+                <section id="web" class="contenidoall">
+                    <div class="contenedorDoble">
+                        <figure class="figura2">
+                            <img src="imagenes/port2.png" alt="Texto descriptivo">
+                        </figure>
+                    </div>
+                    <div class="contenedorTriple">
+                        <figure  class="figura3">
+                            <img src="imagenes/port3.jpg" alt="Texto descriptivo">
+                        </figure>
+                    </div>
+                </section>
+                <section id="custom" class="contenidoall">
+                    <div class="contenedorDoble">
+                        <figure  class="figura1">
+                            <img src="imagenes/port6.jpg" alt="Texto descriptivo">
+                        </figure>
+                        <figure class="figura1">
+                            <img src="imagenes/port7.jpg" alt="Texto descriptivo">
+                        </figure>
+                    </div>
+                </section>
+                <section id="ui" class="contenidoall">
+                    <div class="contenedorDoble">
+                        <figure class="figura1">
+                            <img src="imagenes/port7.jpg" alt="Texto descriptivo">
+                        </figure>
+                        <figure class="figura2">
+                            <img src="imagenes/port2.png" alt="Texto descriptivo">
+                        </figure>
+                    </div>
+                </section>
+            </div>
+            <br>
+            <div class="contenedorBoton">
+                <a class="botonInferior" href="#">VIEW ALL SOFTWARE -></a>
+            </div>
+            <br>
         </div>
-        <div class="contenedorTriple">
-            <figure  class="figura1">
-                <img src="imagenes/port7.jpg" alt="Texto descriptivo">
-            </figure>
-            <figure  class="figura2">
-                <img src="imagenes/port6.jpg" alt="Texto descriptivo">
-            </figure>
-            <figure  class="figura3">
-                <img src="imagenes/port3.jpg" alt="Texto descriptivo">
-            </figure>
-        </div>
-    </section>
+        <br>
+    </main>
+    <footer></footer>
+    <script>
+        $(".contenidoall").hide();
+        $("ul li:first").addClass("active").show();
+        $(".contenidoall:first").show();
+
+        $("ul li").click(function () {
+            $("ul li").removeClass("active");
+
+            $(this).addClass("active");
+
+            $(".contenidoall").hide();
+
+            var activeTab = $(this).find("a").attr("href");
+            $(activeTab).fadeIn();
+            return false;
+        });
+    </script>
 </body>
 </html>

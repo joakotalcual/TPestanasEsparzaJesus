@@ -7,12 +7,39 @@ body{
     font-family: helvetica;
     font-size: 16px;
     line-height: 24px;
-    background-color: #333;
     color: #333;
+}
+main{
+    background-color: #f0f3f8;
 }
 .ancho{
     max-width: 1200px;
     margin: auto;
+    padding-top: 30px;
+}
+.tituloAzul{
+    color: #3399ff;
+    margin: 10px 0;
+}
+nav ul{
+    display: flex;
+    justify-content: start;
+    list-style-type: none;
+}
+nav ul li{
+    margin: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+nav ul li a:hover{
+    background-color: #096ac5;
+    color: white;
 }
 .contenedorDoble{
     display: flex;
@@ -38,6 +65,22 @@ body{
     align-items: stretch;
     gap: 30px;
 }
-.contenedorTriple .figura1, .contenedorTriple .figura2, .contenedorTriple .figura3{
-
+.contenedorBoton{
+    text-align: center;
+}
+.botonInferior{
+    text-align: center;
+    color: white;
+    padding: 10px 15px;
+    background-color: rgb(40, 131, 236);
+    text-decoration: none;
+}
+header, footer{
+    background-color: white;
+    height: 30px;
+}
+html nav ul li.active a{
+    background-color: #096ac5;
+    color: white;
+    border-radius: 10px;
 }

@@ -1,3 +1,41 @@
 @media screen and (max-width:480px){
-    
+    .tituloAzul{
+        color: #3399ff;
+        margin: 0 5%;
+    }
+    h1{
+        margin: 0 5%;
+    }
+    nav{
+        margin: 0 5%;
+
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        list-style-type: none;
+    }
+    .contenedorDoble{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .contenedorTriple{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .contenedorDoble .figura1 img, .contenedorDoble .figura2 img,.contenedorTriple .figura1 img, .contenedorTriple .figura2 img, .contenedorTriple .figura3 img{
+        width: 100%;
+        height: auto;
+    }
+    .contenedorDoble .figura1, .contenedorTriple .figura1, .contenedorTriple .figura2, .contenedorTriple .figura3{
+        width: 90%;
+    }
+    .contenedorDoble .figura2{
+        width: 90%;
+    }
 }
